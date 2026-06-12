@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import PageHeader from '@components/app/ui/PageHeader';
-import AttachmentUpload from '@components/app/features/Compose/AttachmentUpload';
+// import AttachmentUpload from '@components/app/features/Compose/AttachmentUpload';
 import { useApp } from '@context/AppContext';
 
 export default function Compose() {
