@@ -20,6 +20,7 @@ import Templates from '@pages/app/Templates';
 import EmailLogs from '@pages/app/EmailLogs';
 import Billing from '@pages/app/Billing';
 import Invoice from '@pages/app/Invoice';
+import Renew from '@pages/app/Renew';
 import Team from '@pages/app/Team';
 import Settings from '@pages/app/Settings';
 import Developers from '@pages/app/Developers';
@@ -56,6 +57,7 @@ export default function App() {
               <Route path="/logs" element={<ProtectedRoute><EmailLogs /></ProtectedRoute>} />
               <Route path="/billing" element={<ProtectedRoute><Billing /></ProtectedRoute>} />
               <Route path="/invoice/:invoiceNumber" element={<ProtectedRoute><Invoice /></ProtectedRoute>} />
+              <Route path="/renew" element={<ProtectedRoute><Renew /></ProtectedRoute>} />
               <Route path="/team" element={<ProtectedRoute><Team /></ProtectedRoute>} />
               <Route path="/settings" element={<ProtectedRoute><Settings /></ProtectedRoute>} />
               <Route path="/developers" element={<ProtectedRoute><Developers /></ProtectedRoute>} />

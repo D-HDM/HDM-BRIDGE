@@ -9,6 +9,7 @@ export const billingAPI = {
   createInvoice: (planId) => api.post('/billing/invoice', { planId }),
   getInvoice: (invoiceNumber) => api.get(`/billing/invoice/${invoiceNumber}`),
   getPendingInvoice: () => api.get('/billing/invoice/pending/current'),
+  getRenewData: () => api.get('/billing/renew'),
   payInvoice: (invoiceNumber, method, extra = {}) =>
     api.post(`/billing/invoice/${invoiceNumber}/pay`, { method, ...extra }),
   getMpesaStatus: (checkoutRequestId) =>
